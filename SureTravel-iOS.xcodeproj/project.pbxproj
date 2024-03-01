@@ -15,6 +15,7 @@
 		E18D49962B92277A00D79025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49942B92277A00D79025 /* LaunchScreen.storyboard */; };
 		E18D499E2B92332300D79025 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E18D499D2B92332300D79025 /* README.md */; };
 		E18D49A42B9236C400D79025 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D49A32B9236C400D79025 /* BackgroundView.swift */; };
+		E18D49A92B92538D00D79025 /* network.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E18D49A82B92538D00D79025 /* network.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E18D49972B92277A00D79025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E18D499D2B92332300D79025 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E18D49A32B9236C400D79025 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		E18D49A82B92538D00D79025 /* network.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = network.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E18D49922B92277A00D79025 /* Assets.xcassets */,
 				E18D49942B92277A00D79025 /* LaunchScreen.storyboard */,
 				E18D49972B92277A00D79025 /* Info.plist */,
+				E18D49A72B92537A00D79025 /* Resources */,
 			);
 			path = "SureTravel-iOS";
 			sourceTree = "<group>";
@@ -79,6 +82,14 @@
 				E18D49A32B9236C400D79025 /* BackgroundView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E18D49A72B92537A00D79025 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E18D49A82B92538D00D79025 /* network.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 				E18D49932B92277A00D79025 /* Assets.xcassets in Resources */,
 				E18D499E2B92332300D79025 /* README.md in Resources */,
 				E18D49912B92277700D79025 /* Main.storyboard in Resources */,
+				E18D49A92B92538D00D79025 /* network.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

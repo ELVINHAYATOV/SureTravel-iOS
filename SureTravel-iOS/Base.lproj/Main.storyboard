@@ -50,8 +50,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjO-c7-UIh">
-                                        <rect key="frame" x="315.33333333333331" y="148" width="22.666666666666686" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjO-c7-UIh">
+                                        <rect key="frame" x="15" y="148" width="323" height="12"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" name="grayText"/>
                                         <nil key="highlightedColor"/>
@@ -67,6 +67,7 @@
                                     <constraint firstAttribute="bottom" secondItem="HjO-c7-UIh" secondAttribute="bottom" constant="10" id="9wD-rN-nTN"/>
                                     <constraint firstAttribute="trailing" secondItem="HjO-c7-UIh" secondAttribute="trailing" constant="15" id="FAT-vn-TTS"/>
                                     <constraint firstAttribute="trailing" secondItem="AvT-kB-ymU" secondAttribute="trailing" constant="15" id="Fja-yx-YbW"/>
+                                    <constraint firstItem="HjO-c7-UIh" firstAttribute="leading" secondItem="giF-m1-1Bg" secondAttribute="leading" constant="15" id="NMo-PK-7li"/>
                                     <constraint firstItem="AvT-kB-ymU" firstAttribute="leading" secondItem="giF-m1-1Bg" secondAttribute="leading" constant="15" id="PfS-kQ-jTd"/>
                                     <constraint firstAttribute="height" constant="170" id="PsC-FP-6hL"/>
                                     <constraint firstItem="Ag0-Uz-gpO" firstAttribute="leading" secondItem="giF-m1-1Bg" secondAttribute="leading" constant="15" id="VTt-73-NRY"/>
@@ -89,7 +90,86 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hA-ok-f5M">
                                 <rect key="frame" x="0.0" y="470.66666666666674" width="393" height="298.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-i6-i2v" customClass="BackgroundView" customModule="SureTravel_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="36.666666666666657" y="-0.66666666666668561" width="320" height="300"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="network.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Uml-5Q-GiP">
+                                                <rect key="frame" x="15" y="15" width="290" height="193.33333333333334"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Uml-5Q-GiP" secondAttribute="height" multiplier="6:4" id="vvo-d4-rtb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rr-Tc-cnc">
+                                                <rect key="frame" x="15" y="213.33333333333337" width="120" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 20-27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-Ko-t2W">
+                                                <rect key="frame" x="237.66666666666666" y="213.33333333333337" width="67.333333333333343" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estonia/Tartu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHI-2h-gbT">
+                                                <rect key="frame" x="15" y="238.33333333333337" width="290" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-TC-rbU">
+                                                <rect key="frame" x="106.66666666666669" y="255.66666666666666" width="106.33333333333331" height="34.333333333333343"/>
+                                                <color key="backgroundColor" name="background"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Apply Now"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="2rr-Tc-cnc" firstAttribute="top" secondItem="Uml-5Q-GiP" secondAttribute="bottom" constant="5" id="4wG-qL-pn4"/>
+                                            <constraint firstAttribute="height" constant="300" id="51U-KD-hZO"/>
+                                            <constraint firstItem="hoS-Ko-t2W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2rr-Tc-cnc" secondAttribute="trailing" constant="5" id="5g9-eF-cGF"/>
+                                            <constraint firstItem="hoS-Ko-t2W" firstAttribute="top" secondItem="Uml-5Q-GiP" secondAttribute="bottom" constant="5" id="Dzt-wg-c5c"/>
+                                            <constraint firstItem="Uml-5Q-GiP" firstAttribute="leading" secondItem="iKY-i6-i2v" secondAttribute="leading" constant="15" id="Era-FU-Jaz"/>
+                                            <constraint firstItem="kHI-2h-gbT" firstAttribute="leading" secondItem="iKY-i6-i2v" secondAttribute="leading" constant="15" id="JpE-xC-6h4"/>
+                                            <constraint firstItem="2rr-Tc-cnc" firstAttribute="leading" secondItem="iKY-i6-i2v" secondAttribute="leading" constant="15" id="K6P-6g-Xrg"/>
+                                            <constraint firstAttribute="bottom" secondItem="CNl-TC-rbU" secondAttribute="bottom" constant="10" id="Pi0-vN-2jK"/>
+                                            <constraint firstItem="Uml-5Q-GiP" firstAttribute="top" secondItem="iKY-i6-i2v" secondAttribute="top" constant="15" id="WAS-3g-I91"/>
+                                            <constraint firstAttribute="trailing" secondItem="hoS-Ko-t2W" secondAttribute="trailing" constant="15" id="gQ1-Tu-a42"/>
+                                            <constraint firstItem="kHI-2h-gbT" firstAttribute="top" secondItem="2rr-Tc-cnc" secondAttribute="bottom" constant="5" id="m4H-d4-9QO"/>
+                                            <constraint firstItem="hoS-Ko-t2W" firstAttribute="centerY" secondItem="2rr-Tc-cnc" secondAttribute="centerY" id="nQ2-Mc-yIJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uml-5Q-GiP" secondAttribute="trailing" constant="15" id="r4t-qr-jQv"/>
+                                            <constraint firstItem="CNl-TC-rbU" firstAttribute="centerX" secondItem="iKY-i6-i2v" secondAttribute="centerX" id="r9h-bB-BMc"/>
+                                            <constraint firstAttribute="trailing" secondItem="kHI-2h-gbT" secondAttribute="trailing" constant="15" id="wXU-rY-7CL"/>
+                                            <constraint firstAttribute="width" constant="320" id="xqD-Rf-UOB"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" name="background"/>
+                                <constraints>
+                                    <constraint firstItem="iKY-i6-i2v" firstAttribute="centerX" secondItem="9hA-ok-f5M" secondAttribute="centerX" id="QdM-QL-6Af"/>
+                                    <constraint firstItem="iKY-i6-i2v" firstAttribute="centerY" secondItem="9hA-ok-f5M" secondAttribute="centerY" id="z2B-6g-ZDQ"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -223,6 +303,7 @@
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="network.jpg" width="6000" height="4000"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="background">
@@ -231,6 +312,9 @@
         <namedColor name="grayText">
             <color red="0.49019607843137253" green="0.49019607843137253" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
