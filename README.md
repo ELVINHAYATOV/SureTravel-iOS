@@ -17,4 +17,4 @@ _Events depend on organizations arrangements._
 
 ## Draft Version of our UI 
 
-![SureTravel UI 1.0](D:\GitHub\SureTravel-iOS\Media\UI_1.0.png)
+![SureTravel UI 1.0](Media/UI_1.0.png)
