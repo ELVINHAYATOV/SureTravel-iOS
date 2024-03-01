@@ -13,6 +13,8 @@
 		E18D49912B92277700D79025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D498F2B92277700D79025 /* Main.storyboard */; };
 		E18D49932B92277A00D79025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18D49922B92277A00D79025 /* Assets.xcassets */; };
 		E18D49962B92277A00D79025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49942B92277A00D79025 /* LaunchScreen.storyboard */; };
+		E18D499E2B92332300D79025 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E18D499D2B92332300D79025 /* README.md */; };
+		E18D49A42B9236C400D79025 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D49A32B9236C400D79025 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E18D49922B92277A00D79025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E18D49952B92277A00D79025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18D49972B92277A00D79025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E18D499D2B92332300D79025 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E18D49A32B9236C400D79025 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		E18D497D2B92277700D79025 = {
 			isa = PBXGroup;
 			children = (
+				E18D499D2B92332300D79025 /* README.md */,
 				E18D49882B92277700D79025 /* SureTravel-iOS */,
 				E18D49872B92277700D79025 /* Products */,
 			);
@@ -57,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				E18D49892B92277700D79025 /* AppDelegate.swift */,
+				E18D49A22B9236B400D79025 /* View */,
 				E18D498B2B92277700D79025 /* SceneDelegate.swift */,
 				E18D498D2B92277700D79025 /* ViewController.swift */,
 				E18D498F2B92277700D79025 /* Main.storyboard */,
@@ -65,6 +71,14 @@
 				E18D49972B92277A00D79025 /* Info.plist */,
 			);
 			path = "SureTravel-iOS";
+			sourceTree = "<group>";
+		};
+		E18D49A22B9236B400D79025 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18D49A32B9236C400D79025 /* BackgroundView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,7 @@
 			files = (
 				E18D49962B92277A00D79025 /* LaunchScreen.storyboard in Resources */,
 				E18D49932B92277A00D79025 /* Assets.xcassets in Resources */,
+				E18D499E2B92332300D79025 /* README.md in Resources */,
 				E18D49912B92277700D79025 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18D49A42B9236C400D79025 /* BackgroundView.swift in Sources */,
 				E18D498E2B92277700D79025 /* ViewController.swift in Sources */,
 				E18D498A2B92277700D79025 /* AppDelegate.swift in Sources */,
 				E18D498C2B92277700D79025 /* SceneDelegate.swift in Sources */,
