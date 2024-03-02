@@ -22,5 +22,6 @@ class EventView : BackgroundView {
         eventName.text = userData.eventName
         eventDate.text = userData.eventDate
         eventLocation.text = userData.eventLocation
+        moreInfoButton.setTitle(moreInfoString, for: .normal)
     }
 }

@@ -24,9 +24,22 @@
                                 <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-27-q0c">
-                                <rect key="frame" x="20" y="318" width="353" height="85"/>
+                                <rect key="frame" x="20" y="283" width="353" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoP-Lh-bCP">
+                                        <rect key="frame" x="139" y="25" width="75" height="35"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="achivmentClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adk-Su-pZF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" name="background"/>
                                 <constraints>
+                                    <constraint firstItem="QoP-Lh-bCP" firstAttribute="centerX" secondItem="hLt-27-q0c" secondAttribute="centerX" id="Fjp-WF-5mY"/>
+                                    <constraint firstItem="QoP-Lh-bCP" firstAttribute="centerY" secondItem="hLt-27-q0c" secondAttribute="centerY" id="GBe-45-1Bq"/>
                                     <constraint firstAttribute="height" constant="85" id="b2g-Sq-f0u"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -37,7 +50,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giF-m1-1Bg" customClass="ProgressView" customModule="SureTravel_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="153" width="353" height="145"/>
+                                <rect key="frame" x="20" y="118" width="353" height="145"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nb-I6-WJK">
                                         <rect key="frame" x="15" y="15.000000000000002" width="323" height="27.666666666666671"/>
@@ -228,7 +241,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLt-27-q0c" secondAttribute="trailing" constant="20" id="Twj-3Q-4Cc"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VNv-eX-fOo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hA-ok-f5M" secondAttribute="trailing" id="aQz-q1-4mC"/>
-                            <constraint firstItem="giF-m1-1Bg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cIs-TQ-IZB"/>
+                            <constraint firstItem="giF-m1-1Bg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="cIs-TQ-IZB"/>
                             <constraint firstItem="hLt-27-q0c" firstAttribute="top" secondItem="giF-m1-1Bg" secondAttribute="bottom" constant="20" id="ea4-1V-CBd"/>
                             <constraint firstItem="giF-m1-1Bg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fiO-Yq-uPZ"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="ien-Tq-7r6"/>
@@ -238,6 +251,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="u5l-GZ-8dG"/>
                     <connections>
+                        <outlet property="achievementsButton" destination="QoP-Lh-bCP" id="c12-jD-rQU"/>
                         <outlet property="eventView" destination="iKY-i6-i2v" id="vaj-D3-f5O"/>
                         <outlet property="progressView" destination="giF-m1-1Bg" id="6pm-HI-gVv"/>
                     </connections>

@@ -99,6 +99,7 @@
 		E18D49A22B9236B400D79025 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E19608D42B93354D00DEF089 /* Achievements */,
 				E19608CF2B93136D00DEF089 /* MainScene */,
 				E19608C42B93056200DEF089 /* NetworkingScene */,
 				E18D49B62B92A6EB00D79025 /* HealthJourneyScene */,
@@ -160,6 +161,13 @@
 				E19608D02B9313FC00DEF089 /* EventView.swift */,
 			);
 			path = MainScene;
+			sourceTree = "<group>";
+		};
+		E19608D42B93354D00DEF089 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

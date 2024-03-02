@@ -9,10 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     private let homeTitleString = NSLocalizedString("HOME_TITLE", comment: "")
+    private let achievementsString = NSLocalizedString("ACHIEVMENTS", comment: "")
+
 
     @IBOutlet weak var progressView: ProgressView!
     @IBOutlet weak var eventView: EventView!
-
+    @IBOutlet weak var achievementsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         progressView.setProgressTracker()
@@ -22,6 +25,7 @@ class ViewController: UIViewController {
         eventView.setEvent()
         
         self.title = homeTitleString
+        self.achievementsButton.setTitle(achievementsString, for: .normal)
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.barStyle = .black
     }
@@ -36,6 +40,9 @@ class ViewController: UIViewController {
         if let EventDetailedStoryboard = UIStoryboard(name: "EventDetailed", bundle: nil).instantiateInitialViewController() as? EventDetailedViewController{
             self.navigationController?.pushViewController(EventDetailedStoryboard, animated: true)
         }
+    }
+    @IBAction func achivmentClicked(_ sender: Any) {
+        
     }
 }
 
