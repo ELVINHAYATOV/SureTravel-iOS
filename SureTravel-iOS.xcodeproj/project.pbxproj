@@ -18,6 +18,8 @@
 		E18D49B02B929F9B00D79025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49B12B929F9B00D79025 /* LaunchScreen.storyboard */; };
 		E18D49B22B929FAD00D79025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49B32B929FAD00D79025 /* Main.storyboard */; };
 		E18D49B52B92A19100D79025 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D49B42B92A19100D79025 /* ProgressView.swift */; };
+		E18D49B82B92A70700D79025 /* HealthJourney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49B72B92A70700D79025 /* HealthJourney.storyboard */; };
+		E18D49BA2B92A71B00D79025 /* HealthJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D49B92B92A71B00D79025 /* HealthJourney.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E18D49B12B929F9B00D79025 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18D49B32B929FAD00D79025 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E18D49B42B92A19100D79025 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		E18D49B72B92A70700D79025 /* HealthJourney.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = HealthJourney.storyboard; path = "../../../../../../Library/Mobile Documents/.Trash/SureTravel-iOS/View/HealthJourney.storyboard"; sourceTree = "<group>"; };
+		E18D49B92B92A71B00D79025 /* HealthJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthJourney.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		E18D49A22B9236B400D79025 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E18D49B62B92A6EB00D79025 /* HealthJourney */,
 				E18D49A32B9236C400D79025 /* BackgroundView.swift */,
 				E18D49B42B92A19100D79025 /* ProgressView.swift */,
 			);
@@ -96,6 +101,15 @@
 				E18D49A82B92538D00D79025 /* network.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E18D49B62B92A6EB00D79025 /* HealthJourney */ = {
+			isa = PBXGroup;
+			children = (
+				E18D49B72B92A70700D79025 /* HealthJourney.storyboard */,
+				E18D49B92B92A71B00D79025 /* HealthJourney.swift */,
+			);
+			path = HealthJourney;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +174,7 @@
 			files = (
 				E18D49B02B929F9B00D79025 /* LaunchScreen.storyboard in Resources */,
 				E18D49932B92277A00D79025 /* Assets.xcassets in Resources */,
+				E18D49B82B92A70700D79025 /* HealthJourney.storyboard in Resources */,
 				E18D49AB2B929F0B00D79025 /* Localizable.xcstrings in Resources */,
 				E18D499E2B92332300D79025 /* README.md in Resources */,
 				E18D49B22B929FAD00D79025 /* Main.storyboard in Resources */,
@@ -174,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18D49BA2B92A71B00D79025 /* HealthJourney.swift in Sources */,
 				E18D49A42B9236C400D79025 /* BackgroundView.swift in Sources */,
 				E18D498E2B92277700D79025 /* ViewController.swift in Sources */,
 				E18D49B52B92A19100D79025 /* ProgressView.swift in Sources */,

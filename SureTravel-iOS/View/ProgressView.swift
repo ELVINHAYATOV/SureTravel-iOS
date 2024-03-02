@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// UI for Progress box
 class ProgressView : UIView{
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
