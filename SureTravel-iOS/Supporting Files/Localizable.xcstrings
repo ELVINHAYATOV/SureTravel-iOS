@@ -24,10 +24,36 @@
       }
     },
     "ACHIEVEMENTS_TITLE" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Nailiyyətlər"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achievement title"
+          }
+        }
+      }
     },
     "ACHIEVMENTS" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Nailiyyətlər"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achievements"
+          }
+        }
+      }
     },
     "END_DATE" : {
       "localizations" : {
@@ -52,7 +78,20 @@
       }
     },
     "GAINED_BADGES" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Qazanılmışlar"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gained Badges"
+          }
+        }
+      }
     },
     "HEALTH_JOURNEY_TITLE" : {
       "localizations" : {
@@ -77,10 +116,24 @@
       }
     },
     "HEALTH_MOTIVATION" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Health Motivation"
+          }
+        }
+      }
     },
     "HEALTH_VITAL_METRICS" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Health Metrics"
+          }
+        }
+      }
     },
     "HOME_TITLE" : {
       "localizations" : {
