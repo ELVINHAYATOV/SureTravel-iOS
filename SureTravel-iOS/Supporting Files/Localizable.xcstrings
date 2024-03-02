@@ -2,43 +2,155 @@
   "sourceLanguage" : "en",
   "strings" : {
     "ABOUT" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HAQQINDA"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О СОБЫТИИ"
+          }
+        }
+      }
     },
     "END_DATE" : {
       "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitmə tarixi:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "End Date:"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Конечная дата:"
+          }
         }
       }
     },
     "HEALTH_JOURNEY_TITLE" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlam Səyahət"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Healthy Journey"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Здоровое Путешествие"
+          }
+        }
+      }
     },
     "HOME_TITLE" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SureTravel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SureTravel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SureTravel"
+          }
+        }
+      }
     },
     "MORE_INFO" : {
-
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ətraflı məlumat"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More information"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше информации"
+          }
+        }
+      }
     },
     "PROGRESS" : {
       "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proqress"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Progress"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресс"
           }
         }
       }
     },
     "START_DATE" : {
       "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlama tarixi:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start Date:"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начальная дата:"
           }
         }
       }
