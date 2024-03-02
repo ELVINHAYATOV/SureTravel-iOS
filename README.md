@@ -1,17 +1,20 @@
 # SureTravel
 
-# Who We Are
-We are a dynamic team from ADA University, driven by the goal of innovating insurance solutions for PashaLive. Our team comprises:
+## What is SureTravel?
+SureTravel is an idea that aims to increase appeal of citizens to buy life insurance. We believe that providing award mechanism into Insurance system by integrating yearly health goals will increase peoples motivation to usage of life insurance. We will come up with some workshops and holidays inside or outside of country. The users which can stay healthy up to targeted year will have a chance to get benefit from these events. **Only the health issues that can affect to the life Insurance will included.**
 
-Leyla, Elvin, and Toghrul: Passionate about software development, these Computer Science and Computer Engineering students bring technical expertise to the table.
+### How SureTravel will implement this idea?
+We are working on a MVP for this idea on IOS platform. This app will show up variable events to the users and the users that reach the target will easily apply this programs.
 
-Adila: With a focus on business planning and investigation, Adila ensures our strategies are grounded in thorough research and analysis.
+## Features of SureTravel
+- Easy Access from current PashaLife mobile application
+- Progress bar for tracking healthy days' duration.
+- Suggestions for possible events
+- Algorithm that chooses the best events for each individual
+- Permanent and ... events
 
-Together, we are a confident and forward-thinking team committed to winning this hackathon and delivering cutting-edge insurance ideas for PashaLive.
+_Events depend on organizations arrangements._
 
+## Draft Version of our UI 
 
-## Project Description
-
-SureTravel is dedicated to transforming the perception of health insurance. We go beyond traditional coverage, offering incentives for maintaining good health throughout the year. Our innovative approach incentivizes healthy behavior by providing rewards such as travel opportunities and workshops for those who remain healthy. Our one-year and five-year plans offer escalating benefits, ensuring sustained value and encouraging long-term engagement.
-
-Discover the difference with SureTravel. Start your journey towards a healthier future now.
+![SureTravel UI 1.0](Media/UI_1.0.png)
