@@ -27,7 +27,7 @@
       "localizations" : {
         "az-AZ" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Nailiyyətlər"
           }
         },
@@ -43,7 +43,7 @@
       "localizations" : {
         "az-AZ" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Nailiyyətlər"
           }
         },
@@ -81,8 +81,8 @@
       "localizations" : {
         "az-AZ" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Qazanılmışlar"
+            "state" : "translated",
+            "value" : "Qazanılmış nişanlar"
           }
         },
         "en" : {
@@ -117,10 +117,16 @@
     },
     "HEALTH_MOTIVATION" : {
       "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əla!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Health Motivation"
+            "value" : "Great Job! Your're in a row."
           }
         }
       }
@@ -130,7 +136,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Health Metrics"
+            "value" : "Vital Health Metrics"
           }
         }
       }
@@ -153,6 +159,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SureTravel"
+          }
+        }
+      }
+    },
+    "LOCKED_BADGES" : {
+      "localizations" : {
+        "az-AZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlı nişanlar"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locked Badges"
           }
         }
       }

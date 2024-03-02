@@ -24,10 +24,15 @@ class ViewController: UIViewController {
         
         eventView.setEvent()
         
+        let iconImage = UIImage(systemName: "gear")
+        let iconBarButtonItem = UIBarButtonItem(image: iconImage, style: .plain, target: self, action: #selector(settingsTapped))
+        self.navigationItem.rightBarButtonItem = iconBarButtonItem
+        
         self.title = homeTitleString
         self.achievementsButton.setTitle(achievementsString, for: .normal)
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.tintColor = .white
     }
     
     @objc func progressViewClicked(_ sender: Any){
@@ -44,6 +49,16 @@ class ViewController: UIViewController {
     @IBAction func achivmentClicked(_ sender: Any) {
         if let AchievementsStoryboard = UIStoryboard(name: "AchievementsScene", bundle: nil).instantiateInitialViewController() as? AchievementsViewController {
             self.navigationController?.pushViewController(AchievementsStoryboard, animated: true)
+        }
+    }
+    
+    @objc func settingsTapped() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
         }
     }
 }

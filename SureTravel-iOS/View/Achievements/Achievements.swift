@@ -9,7 +9,8 @@ import UIKit
 
 class AchievementsViewController: GradientViewController {
     @IBOutlet weak var gainedBadges: GainedBadges!
-    
+    @IBOutlet weak var lockedBadges: LockedBadges!
+
     private let aboutString = NSLocalizedString("ABOUT", comment: "")
     private let achievementsTitleString = NSLocalizedString("ACHIEVEMENTS_TITLE", comment: "")
 
@@ -20,7 +21,8 @@ class AchievementsViewController: GradientViewController {
         self.title = achievementsTitleString
         
         gainedBadges.setBadges()
-        
+        lockedBadges.setBadges()
+
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes
         self.navigationItem.titleView?.tintColor = .white

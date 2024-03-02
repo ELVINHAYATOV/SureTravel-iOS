@@ -11,6 +11,7 @@ class HealthJourney: GradientViewController {
     @IBOutlet weak var motivationalLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var vitalsLabel: UILabel!
     
     private let healthJourneyTitleString = NSLocalizedString("HEALTH_JOURNEY_TITLE", comment: "")
     private let motivationalString = NSLocalizedString("HEALTH_MOTIVATION", comment: "")
@@ -38,6 +39,7 @@ class HealthJourney: GradientViewController {
         super.viewDidLoad()
         self.title = healthJourneyTitleString
         self.motivationalLabel.text = motivationalString
+        self.vitalsLabel.text = metricsString
         
         setJourney()
         
