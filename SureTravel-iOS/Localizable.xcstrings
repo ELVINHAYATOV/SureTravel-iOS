@@ -1,0 +1,42 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "END_DATE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "End Date:"
+          }
+        }
+      }
+    },
+    "HEALTH_JOURNEY_TITLE" : {
+
+    },
+    "HOME_TITLE" : {
+
+    },
+    "PROGRESS" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progress"
+          }
+        }
+      }
+    },
+    "START_DATE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Date:"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

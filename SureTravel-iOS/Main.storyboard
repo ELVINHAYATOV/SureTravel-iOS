@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="511.33333333333331"/>
                                 <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giF-m1-1Bg">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giF-m1-1Bg" customClass="ProgressView" customModule="SureTravel_iOS" customModuleProvider="target">
                                 <rect key="frame" x="20" y="153" width="353" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nb-I6-WJK">
@@ -87,12 +87,20 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="daysLabel" destination="HjO-c7-UIh" id="xWT-Pi-oU2"/>
+                                    <outlet property="endDateLabel" destination="D2o-Zt-uJh" id="K1c-J9-ybe"/>
+                                    <outlet property="progressBar" destination="AvT-kB-ymU" id="O98-xt-HBj"/>
+                                    <outlet property="progressLabel" destination="4nb-I6-WJK" id="PCo-oQ-IF0"/>
+                                    <outlet property="startDateLabel" destination="Ag0-Uz-gpO" id="CO6-SR-FQ8"/>
+                                    <outlet property="userNameLabel" destination="009-z8-a6b" id="IMy-W1-Yvj"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hA-ok-f5M">
-                                <rect key="frame" x="0.0" y="470.66666666666674" width="393" height="298.33333333333326"/>
+                                <rect key="frame" x="0.0" y="428.33333333333326" width="393" height="340.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-i6-i2v" customClass="BackgroundView" customModule="SureTravel_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="36.666666666666657" y="-0.66666666666668561" width="320" height="300"/>
+                                        <rect key="frame" x="36.666666666666657" y="20.333333333333371" width="320" height="300"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="network.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Uml-5Q-GiP">
                                                 <rect key="frame" x="15" y="15" width="290" height="193.33333333333334"/>
@@ -107,33 +115,38 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rr-Tc-cnc">
-                                                <rect key="frame" x="15" y="213.33333333333337" width="120" height="20"/>
+                                                <rect key="frame" x="15" y="213.33333333333331" width="120" height="18.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 20-27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-Ko-t2W">
-                                                <rect key="frame" x="237.66666666666666" y="213.33333333333337" width="67.333333333333343" height="20"/>
+                                                <rect key="frame" x="237.66666666666666" y="213.33333333333331" width="67.333333333333343" height="18.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estonia/Tartu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHI-2h-gbT">
-                                                <rect key="frame" x="15" y="238.33333333333337" width="290" height="16"/>
+                                                <rect key="frame" x="15" y="236.99999999999994" width="290" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-TC-rbU">
-                                                <rect key="frame" x="106.66666666666669" y="255.66666666666666" width="106.33333333333331" height="34.333333333333343"/>
+                                                <rect key="frame" x="60" y="257.99999999999994" width="200" height="32"/>
                                                 <color key="backgroundColor" name="background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="rUx-U8-IkF"/>
+                                                </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Apply Now"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Apply Now">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
+                                                        <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
@@ -152,6 +165,7 @@
                                             <constraint firstAttribute="trailing" secondItem="hoS-Ko-t2W" secondAttribute="trailing" constant="15" id="gQ1-Tu-a42"/>
                                             <constraint firstItem="kHI-2h-gbT" firstAttribute="top" secondItem="2rr-Tc-cnc" secondAttribute="bottom" constant="5" id="m4H-d4-9QO"/>
                                             <constraint firstItem="hoS-Ko-t2W" firstAttribute="centerY" secondItem="2rr-Tc-cnc" secondAttribute="centerY" id="nQ2-Mc-yIJ"/>
+                                            <constraint firstItem="CNl-TC-rbU" firstAttribute="top" secondItem="kHI-2h-gbT" secondAttribute="bottom" constant="5" id="pM7-BY-VLA"/>
                                             <constraint firstAttribute="trailing" secondItem="Uml-5Q-GiP" secondAttribute="trailing" constant="15" id="r4t-qr-jQv"/>
                                             <constraint firstItem="CNl-TC-rbU" firstAttribute="centerX" secondItem="iKY-i6-i2v" secondAttribute="centerX" id="r9h-bB-BMc"/>
                                             <constraint firstAttribute="trailing" secondItem="kHI-2h-gbT" secondAttribute="trailing" constant="15" id="wXU-rY-7CL"/>
@@ -160,7 +174,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="40"/>
+                                                <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -183,7 +197,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gke-Tz-mIB" secondAttribute="trailing" id="4ZY-Y0-9od"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="giF-m1-1Bg" secondAttribute="trailing" constant="20" id="JjH-SS-SBj"/>
-                            <constraint firstItem="9hA-ok-f5M" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="Oh1-L5-mEE"/>
+                            <constraint firstItem="9hA-ok-f5M" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Oh1-L5-mEE"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RKM-Q2-bRr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9hA-ok-f5M" secondAttribute="bottom" id="TVE-hJ-9sB"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VNv-eX-fOo"/>
@@ -196,10 +210,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="u5l-GZ-8dG"/>
                     <connections>
-                        <outlet property="endDateLabel" destination="D2o-Zt-uJh" id="Uvh-Q1-50E"/>
-                        <outlet property="progressBar" destination="AvT-kB-ymU" id="mvM-2d-MKe"/>
-                        <outlet property="progressLabel" destination="4nb-I6-WJK" id="itj-zj-zJh"/>
-                        <outlet property="startDateLabel" destination="Ag0-Uz-gpO" id="skG-N4-rbo"/>
+                        <outlet property="progressView" destination="giF-m1-1Bg" id="6pm-HI-gVv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -211,10 +222,11 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ts0-E5-bsi" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UOl-Fj-Ilh">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background"/>
                     </tabBar>
                     <connections>
                         <segue destination="VUJ-Ba-Okw" kind="relationship" relationship="viewControllers" id="01c-2H-vgq"/>
@@ -230,7 +242,7 @@
         <!--Yeni müqavilə yarat-->
         <scene sceneID="tkB-1Z-2vT">
             <objects>
-                <viewController id="qlQ-KV-N4b" customClass="ViewController" customModule="SureTravel_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qlQ-KV-N4b" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atj-En-xLW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,7 +258,7 @@
         <!--Nett-Gross-->
         <scene sceneID="4Co-3d-y3m">
             <objects>
-                <viewController id="0dK-HC-BGI" customClass="ViewController" customModule="SureTravel_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0dK-HC-BGI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I7y-Md-c5B">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,6 +280,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GZ4-Pz-rQW">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -307,7 +325,7 @@
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="background">
-            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="grayText">
             <color red="0.49019607843137253" green="0.49019607843137253" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

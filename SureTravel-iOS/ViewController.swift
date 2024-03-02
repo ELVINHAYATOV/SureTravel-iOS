@@ -8,15 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var progressLabel: UILabel!
-    @IBOutlet weak var startDateLabel: UILabel!
-    @IBOutlet weak var endDateLabel: UILabel!
-    @IBOutlet weak var progressBar: UIProgressView!
+    private let homeTitleString = NSLocalizedString("HOME_TITLE", comment: "")
+
+    @IBOutlet weak var progressView: ProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let transform : CGAffineTransform =  CGAffineTransformMakeScale(1.0, 3.0)
-        progressBar.transform = transform
+        progressView.setProgressTracker()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(progressViewClicked(_:)))
+        progressView.addGestureRecognizer(tapGesture)
+        
+        self.title = homeTitleString
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    @objc func progressViewClicked(_ sender: Any){
+        if let HealthJourneyStoryboard = UIStoryboard(name: "HealthJourney", bundle: nil).instantiateInitialViewController() as? HealthJourney{
+            self.navigationController?.pushViewController(HealthJourneyStoryboard, animated: true)
+        }
     }
 }
 
