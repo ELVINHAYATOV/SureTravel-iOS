@@ -21,16 +21,10 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sD2-Rs-PPO">
-                                        <rect key="frame" x="20" y="0.0" width="353" height="260.33333333333331"/>
+                                        <rect key="frame" x="20" y="0.0" width="353" height="220"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvd-Lu-DEB">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rip-xL-B5o">
-                                                <rect key="frame" x="0.0" y="40.333333333333329" width="353" height="99.999999999999986"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGE-1C-r3Q">
                                                         <rect key="frame" x="10" y="7.9999999999999982" width="333" height="20.333333333333329"/>
@@ -45,7 +39,7 @@
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-1n-aFn">
-                                                        <rect key="frame" x="10" y="74.000000000000014" width="333" height="18"/>
+                                                        <rect key="frame" x="10" y="74" width="333" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -64,12 +58,18 @@
                                                     <constraint firstItem="uGE-1C-r3Q" firstAttribute="top" secondItem="rip-xL-B5o" secondAttribute="top" constant="8" id="k9v-Td-lyj"/>
                                                     <constraint firstItem="D5V-1n-aFn" firstAttribute="leading" secondItem="rip-xL-B5o" secondAttribute="leading" constant="10" id="zNI-9p-DoV"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oi8-2a-dH3">
-                                                <rect key="frame" x="0.0" y="160.33333333333334" width="353" height="100.00000000000003"/>
+                                                <rect key="frame" x="0.0" y="120" width="353" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiB-gE-obV">
-                                                        <rect key="frame" x="10" y="73.999999999999972" width="333" height="18"/>
+                                                        <rect key="frame" x="10" y="74" width="333" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -104,6 +104,11 @@
                             <constraint firstItem="8iq-yO-nje" firstAttribute="leading" secondItem="yB0-WC-U6G" secondAttribute="leading" id="Xmb-uZ-kPN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="motivationalLabel" destination="uGE-1C-r3Q" id="Obf-f4-z78"/>
+                        <outlet property="progressBar" destination="Jgf-mV-sGK" id="CN4-gD-lae"/>
+                        <outlet property="resultLabel" destination="D5V-1n-aFn" id="cOt-LY-KLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

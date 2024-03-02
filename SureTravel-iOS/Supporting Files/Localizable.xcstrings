@@ -76,6 +76,12 @@
         }
       }
     },
+    "HEALTH_MOTIVATION" : {
+
+    },
+    "HEALTH_VITAL_METRICS" : {
+
+    },
     "HOME_TITLE" : {
       "localizations" : {
         "az-AZ" : {
