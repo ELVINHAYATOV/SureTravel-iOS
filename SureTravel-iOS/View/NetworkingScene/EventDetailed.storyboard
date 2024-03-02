@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Networking View Controller-->
+        <!--Event Detailed View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="NetworkingViewController" customModule="SureTravel_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="EventDetailedViewController" customModule="SureTravel_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dV1-34-e4Y">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                                     <constraint firstItem="sD2-Rs-PPO" firstAttribute="centerX" secondItem="8iq-yO-nje" secondAttribute="centerX" id="bde-M6-9NL"/>
                                     <constraint firstAttribute="trailing" secondItem="sD2-Rs-PPO" secondAttribute="trailing" constant="15" id="qsg-Rx-Cce"/>
                                     <constraint firstItem="sD2-Rs-PPO" firstAttribute="top" secondItem="8iq-yO-nje" secondAttribute="top" id="sDM-st-xOx"/>
-                                    <constraint firstAttribute="bottom" secondItem="sD2-Rs-PPO" secondAttribute="bottom" id="xk2-Lx-BhL"/>
+                                    <constraint firstAttribute="bottom" secondItem="sD2-Rs-PPO" secondAttribute="bottom" constant="15" id="xk2-Lx-BhL"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -77,6 +77,10 @@
                             <constraint firstItem="8iq-yO-nje" firstAttribute="leading" secondItem="yB0-WC-U6G" secondAttribute="leading" id="Xmb-uZ-kPN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutLabel" destination="lj6-Q2-xFP" id="HPv-0Z-koA"/>
+                        <outlet property="eventInfoLabel" destination="VVw-G5-fO7" id="rcz-Vn-54S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

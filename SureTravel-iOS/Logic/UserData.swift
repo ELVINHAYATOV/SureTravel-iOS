@@ -22,7 +22,7 @@ struct UserData : Codable{
         dateComponents.day = dateDay
         return dateComponents
     }
-    //MARK: - Data for Networking
+    //MARK: - Data for Event
     var eventName: String = ""
     var eventLocation: String = ""
     var eventDate: String = ""

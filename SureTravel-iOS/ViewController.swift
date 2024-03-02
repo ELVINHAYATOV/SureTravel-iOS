@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         
         self.title = homeTitleString
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.barStyle = .black
     }
     
     @objc func progressViewClicked(_ sender: Any){
@@ -32,8 +33,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moreInfoClicked(_ sender: Any) {
-        if let NetworkingyStoryboard = UIStoryboard(name: "EventDetailed", bundle: nil).instantiateInitialViewController() as? EventDetailedViewController{
-            self.navigationController?.pushViewController(NetworkingyStoryboard, animated: true)
+        if let EventDetailedStoryboard = UIStoryboard(name: "EventDetailed", bundle: nil).instantiateInitialViewController() as? EventDetailedViewController{
+            self.navigationController?.pushViewController(EventDetailedStoryboard, animated: true)
         }
     }
 }

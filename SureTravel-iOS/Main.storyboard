@@ -23,6 +23,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="511.33333333333331"/>
                                 <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-27-q0c">
+                                <rect key="frame" x="20" y="318" width="353" height="85"/>
+                                <color key="backgroundColor" name="background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="b2g-Sq-f0u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giF-m1-1Bg" customClass="ProgressView" customModule="SureTravel_iOS" customModuleProvider="target">
                                 <rect key="frame" x="20" y="153" width="353" height="145"/>
                                 <subviews>
@@ -186,7 +199,7 @@
                                         <connections>
                                             <outlet property="eventDate" destination="hoS-Ko-t2W" id="n8W-Hc-zOg"/>
                                             <outlet property="eventLocation" destination="kHI-2h-gbT" id="G3t-1E-8rq"/>
-                                            <outlet property="eventName" destination="hoS-Ko-t2W" id="LHl-mv-2qH"/>
+                                            <outlet property="eventName" destination="2rr-Tc-cnc" id="Mf9-s9-sii"/>
                                             <outlet property="moreInfoButton" destination="CNl-TC-rbU" id="h1F-0b-AP3"/>
                                         </connections>
                                     </view>
@@ -212,11 +225,14 @@
                             <constraint firstItem="9hA-ok-f5M" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Oh1-L5-mEE"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RKM-Q2-bRr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9hA-ok-f5M" secondAttribute="bottom" id="TVE-hJ-9sB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLt-27-q0c" secondAttribute="trailing" constant="20" id="Twj-3Q-4Cc"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VNv-eX-fOo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hA-ok-f5M" secondAttribute="trailing" id="aQz-q1-4mC"/>
                             <constraint firstItem="giF-m1-1Bg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cIs-TQ-IZB"/>
+                            <constraint firstItem="hLt-27-q0c" firstAttribute="top" secondItem="giF-m1-1Bg" secondAttribute="bottom" constant="20" id="ea4-1V-CBd"/>
                             <constraint firstItem="giF-m1-1Bg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fiO-Yq-uPZ"/>
                             <constraint firstItem="Gke-Tz-mIB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="ien-Tq-7r6"/>
+                            <constraint firstItem="hLt-27-q0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ipr-nH-A8K"/>
                             <constraint firstItem="9hA-ok-f5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y20-o2-opb"/>
                         </constraints>
                     </view>
