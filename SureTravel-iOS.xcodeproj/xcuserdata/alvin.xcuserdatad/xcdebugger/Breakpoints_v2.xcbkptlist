@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3A22C719-55B3-472E-AD37-C5C801BB67BC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SureTravel-iOS/Logic/UserData.swift"
@@ -56,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9C550ADC-FFD5-4CD3-A078-21A464E4FA3F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SureTravel-iOS/Logic/UserData.swift"
@@ -88,7 +88,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C30FBCDC-2AC4-4065-B96A-A2AA02058FE0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SureTravel-iOS/ViewController.swift"
@@ -97,6 +97,54 @@
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "moreInfoClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C30FBCDC-2AC4-4065-B96A-A2AA02058FE0 - da194b1abcc95aff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SureTravel_iOS.ViewController.moreInfoClicked(Any) -&gt; ()"
+                  moduleName = "SureTravel-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alvin/Documents/GitHub/SureTravel-iOS/SureTravel-iOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "C30FBCDC-2AC4-4065-B96A-A2AA02058FE0 - da194b1abcc95b58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SureTravel_iOS.ViewController.moreInfoClicked(Any) -&gt; ()"
+                  moduleName = "SureTravel-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alvin/Documents/GitHub/SureTravel-iOS/SureTravel-iOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B20CFA11-47A5-4AA8-B02F-801A8A5679D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SureTravel-iOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "achivmentClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

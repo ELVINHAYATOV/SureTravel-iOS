@@ -26,6 +26,10 @@
 		E19608CD2B9308DA00DEF089 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608CC2B9308DA00DEF089 /* UserData.swift */; };
 		E19608D12B9313FC00DEF089 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608D02B9313FC00DEF089 /* EventView.swift */; };
 		E19608D32B93192E00DEF089 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = E19608D22B93192E00DEF089 /* User.json */; };
+		E19608D72B93363E00DEF089 /* AchievementsScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19608D52B93363E00DEF089 /* AchievementsScene.storyboard */; };
+		E19608D82B93363E00DEF089 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608D62B93363E00DEF089 /* Achievements.swift */; };
+		E19608DA2B933BB300DEF089 /* LockedBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608D92B933BB300DEF089 /* LockedBadges.swift */; };
+		E19608DC2B933BC000DEF089 /* GainedBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608DB2B933BC000DEF089 /* GainedBadges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		E19608CC2B9308DA00DEF089 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		E19608D02B9313FC00DEF089 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		E19608D22B93192E00DEF089 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		E19608D52B93363E00DEF089 /* AchievementsScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AchievementsScene.storyboard; sourceTree = "<group>"; };
+		E19608D62B93363E00DEF089 /* Achievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		E19608D92B933BB300DEF089 /* LockedBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedBadges.swift; sourceTree = "<group>"; };
+		E19608DB2B933BC000DEF089 /* GainedBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GainedBadges.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,10 @@
 		E19608D42B93354D00DEF089 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
+				E19608D52B93363E00DEF089 /* AchievementsScene.storyboard */,
+				E19608D62B93363E00DEF089 /* Achievements.swift */,
+				E19608D92B933BB300DEF089 /* LockedBadges.swift */,
+				E19608DB2B933BC000DEF089 /* GainedBadges.swift */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 				E19608D32B93192E00DEF089 /* User.json in Resources */,
 				E18D49B22B929FAD00D79025 /* Main.storyboard in Resources */,
 				E18D49A92B92538D00D79025 /* network.jpg in Resources */,
+				E19608D72B93363E00DEF089 /* AchievementsScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +267,9 @@
 				E18D49A42B9236C400D79025 /* BackgroundView.swift in Sources */,
 				E18D498E2B92277700D79025 /* ViewController.swift in Sources */,
 				E18D49B52B92A19100D79025 /* ProgressView.swift in Sources */,
+				E19608DA2B933BB300DEF089 /* LockedBadges.swift in Sources */,
+				E19608D82B93363E00DEF089 /* Achievements.swift in Sources */,
+				E19608DC2B933BC000DEF089 /* GainedBadges.swift in Sources */,
 				E18D498A2B92277700D79025 /* AppDelegate.swift in Sources */,
 				E18D498C2B92277700D79025 /* SceneDelegate.swift in Sources */,
 				E19608CD2B9308DA00DEF089 /* UserData.swift in Sources */,

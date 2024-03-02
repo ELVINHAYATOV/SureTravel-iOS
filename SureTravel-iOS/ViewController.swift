@@ -42,7 +42,9 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func achivmentClicked(_ sender: Any) {
-        
+        if let AchievementsStoryboard = UIStoryboard(name: "AchievementsScene", bundle: nil).instantiateInitialViewController() as? AchievementsViewController {
+            self.navigationController?.pushViewController(AchievementsStoryboard, animated: true)
+        }
     }
 }
 

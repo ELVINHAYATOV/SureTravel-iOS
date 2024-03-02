@@ -23,6 +23,12 @@
         }
       }
     },
+    "ACHIEVEMENTS_TITLE" : {
+
+    },
+    "ACHIEVMENTS" : {
+
+    },
     "END_DATE" : {
       "localizations" : {
         "az-AZ" : {
@@ -44,6 +50,9 @@
           }
         }
       }
+    },
+    "GAINED_BADGES" : {
+
     },
     "HEALTH_JOURNEY_TITLE" : {
       "localizations" : {
