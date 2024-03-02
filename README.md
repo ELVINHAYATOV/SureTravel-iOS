@@ -1,20 +1,49 @@
 # SureTravel
 
-## What is SureTravel?
-SureTravel is an idea that aims to increase appeal of citizens to buy life insurance. We believe that providing award mechanism into Insurance system by integrating yearly health goals will increase peoples motivation to usage of life insurance. We will come up with some workshops and holidays inside or outside of country. The users which can stay healthy up to targeted year will have a chance to get benefit from these events. **Only the health issues that can affect to the life Insurance will included.**
+This is a project idea for USG Apex Hackathon by Pathfinders team. 
 
-### How SureTravel will implement this idea?
-We are working on a MVP for this idea on IOS platform. This app will show up variable events to the users and the users that reach the target will easily apply this programs.
 
-## Features of SureTravel
-- Easy Access from current PashaLife mobile application
-- Progress bar for tracking healthy days' duration.
+## Our team
+
+We are **Pathfinders** team and we want to make corporate life insurance more attractive for customers.
+
+
+## Project Description
+
+SureTravel is our idea which aims to increase appeal of citizens to buy life insurance. We believe that providing award mechanism into insurance system by integrating yearly health goals will increase peoples motivation to usage of life insurance.
+
+We will come up with some workshops and holidays inside or outside of country. The users who will be able to stay healthy till the targeted year will have a chance to get benefit from these events. **Only the health issues that can affect the life Insurance will be considered.**
+
+We have made an MVP for this idea on IOS platform. This feature will show different events to the users and the users that reach the target year will easily apply for these programs.
+
+
+## Main features
+
+- Easy Access from current «Pasha Life» mobile application
+- Progress bar for tracking healthy days' duration
 - Suggestions for possible events
 - Algorithm that chooses the best events for each individual
-- Permanent and ... events
+- Long and short-term events for users
 
-_Events depend on organizations arrangements._
+_These events will depend on the organization's arrangements._
 
-## Draft Version of our UI 
 
-![SureTravel UI 1.0](Media/UI_1.0.png)
+## Usage
+
+SureTravel feature can be accessed through «Pasha Life» mobile application.
+
+
+#### Steps:
+
+1. Launch the «Pasha Life» app on your smartphone or tablet.
+2. Navigate to the "Daha çox" section. Locate the icon found in the bottom right corner of the app interface. 
+
+
+## Notes
+
+The UI of the project can be found in "Media" folder.
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
