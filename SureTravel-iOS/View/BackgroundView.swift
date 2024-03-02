@@ -63,6 +63,11 @@ class GradientViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.gradientLayer = GradientBackground.apply(to: self.view)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
+        self.navigationItem.titleView?.tintColor = .white
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func viewDidLayoutSubviews() {

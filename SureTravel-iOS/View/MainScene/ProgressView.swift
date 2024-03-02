@@ -20,22 +20,15 @@ class ProgressView : UIView{
     private let startDateString = NSLocalizedString("START_DATE", comment: "")
     private let endDateString = NSLocalizedString("END_DATE", comment: "")
 
-    private let userName = "User\nName"
-    private let date : DateComponents = {
-        var dateComponents = DateComponents()
-        dateComponents.year = 2024
-        dateComponents.month = 1
-        dateComponents.day = 13
-        return dateComponents
-    }()
+    private let userDate = UserDataSource.getUserData()
     
     func setProgressTracker() {
         progressLabel.text = progressString
-        userNameLabel.text = userName
+        userNameLabel.text = "\(userDate.userName)\n\(userDate.userSurename)"
         
         let calendar = Calendar.current
         
-        if let startDate = calendar.date(from: self.date),
+        if let startDate = calendar.date(from: self.userDate.getDate()),
            let endDate = calendar.date(byAdding: .year, value: 1, to: startDate) {
             
             let dateFormatter = DateFormatter()

@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giF-m1-1Bg" customClass="ProgressView" customModule="SureTravel_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="153" width="353" height="170"/>
+                                <rect key="frame" x="20" y="153" width="353" height="145"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nb-I6-WJK">
                                         <rect key="frame" x="15" y="15.000000000000002" width="323" height="27.666666666666671"/>
@@ -33,31 +33,34 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-Uz-gpO">
-                                        <rect key="frame" x="15" y="47.666666666666657" width="68" height="12"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                        <rect key="frame" x="15" y="47.666666666666657" width="79.666666666666671" height="13.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2o-Zt-uJh">
-                                        <rect key="frame" x="15" y="64.666666666666657" width="68" height="12"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                        <rect key="frame" x="15" y="66" width="79.666666666666671" height="15.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="009-z8-a6b">
-                                        <rect key="frame" x="98" y="42.666666666666657" width="240" height="20.333333333333329"/>
+                                        <rect key="frame" x="109.66666666666664" y="42.666666666666657" width="228.33333333333337" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjO-c7-UIh">
-                                        <rect key="frame" x="15" y="148" width="323" height="12"/>
+                                        <rect key="frame" x="15" y="123" width="323" height="12"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" name="grayText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AvT-kB-ymU">
-                                        <rect key="frame" x="15" y="139" width="323" height="4"/>
+                                        <rect key="frame" x="15" y="108" width="323" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="AD9-kL-akH"/>
+                                        </constraints>
                                     </progressView>
                                 </subviews>
                                 <color key="backgroundColor" name="background"/>
@@ -69,7 +72,7 @@
                                     <constraint firstAttribute="trailing" secondItem="AvT-kB-ymU" secondAttribute="trailing" constant="15" id="Fja-yx-YbW"/>
                                     <constraint firstItem="HjO-c7-UIh" firstAttribute="leading" secondItem="giF-m1-1Bg" secondAttribute="leading" constant="15" id="NMo-PK-7li"/>
                                     <constraint firstItem="AvT-kB-ymU" firstAttribute="leading" secondItem="giF-m1-1Bg" secondAttribute="leading" constant="15" id="PfS-kQ-jTd"/>
-                                    <constraint firstAttribute="height" constant="170" id="PsC-FP-6hL"/>
+                                    <constraint firstAttribute="height" constant="145" id="PsC-FP-6hL"/>
                                     <constraint firstItem="Ag0-Uz-gpO" firstAttribute="leading" secondItem="giF-m1-1Bg" secondAttribute="leading" constant="15" id="VTt-73-NRY"/>
                                     <constraint firstItem="009-z8-a6b" firstAttribute="leading" secondItem="Ag0-Uz-gpO" secondAttribute="trailing" constant="15" id="WYI-kn-mF7"/>
                                     <constraint firstItem="Ag0-Uz-gpO" firstAttribute="top" secondItem="4nb-I6-WJK" secondAttribute="bottom" constant="5" id="Yly-LY-DHX"/>
@@ -99,7 +102,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hA-ok-f5M">
                                 <rect key="frame" x="0.0" y="428.33333333333326" width="393" height="340.66666666666674"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-i6-i2v" customClass="BackgroundView" customModule="SureTravel_iOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-i6-i2v" customClass="EventView" customModule="SureTravel_iOS" customModuleProvider="target">
                                         <rect key="frame" x="36.666666666666657" y="20.333333333333371" width="320" height="300"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="network.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Uml-5Q-GiP">
@@ -140,7 +143,7 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Apply Now">
+                                                <buttonConfiguration key="configuration" style="plain" title="info">
                                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -149,6 +152,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="moreInfoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6Z-ZV-mHa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.36470589040000001" green="0.36470589040000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -177,6 +183,12 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="eventDate" destination="hoS-Ko-t2W" id="n8W-Hc-zOg"/>
+                                            <outlet property="eventLocation" destination="kHI-2h-gbT" id="G3t-1E-8rq"/>
+                                            <outlet property="eventName" destination="hoS-Ko-t2W" id="LHl-mv-2qH"/>
+                                            <outlet property="moreInfoButton" destination="CNl-TC-rbU" id="h1F-0b-AP3"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="background"/>
@@ -210,6 +222,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="u5l-GZ-8dG"/>
                     <connections>
+                        <outlet property="eventView" destination="iKY-i6-i2v" id="vaj-D3-f5O"/>
                         <outlet property="progressView" destination="giF-m1-1Bg" id="6pm-HI-gVv"/>
                     </connections>
                 </viewController>

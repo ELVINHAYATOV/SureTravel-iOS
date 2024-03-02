@@ -18,8 +18,14 @@
 		E18D49B02B929F9B00D79025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49B12B929F9B00D79025 /* LaunchScreen.storyboard */; };
 		E18D49B22B929FAD00D79025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49B32B929FAD00D79025 /* Main.storyboard */; };
 		E18D49B52B92A19100D79025 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D49B42B92A19100D79025 /* ProgressView.swift */; };
-		E18D49B82B92A70700D79025 /* HealthJourney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D49B72B92A70700D79025 /* HealthJourney.storyboard */; };
 		E18D49BA2B92A71B00D79025 /* HealthJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D49B92B92A71B00D79025 /* HealthJourney.swift */; };
+		E19608C32B93022200DEF089 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608C22B93022200DEF089 /* ProgressBar.swift */; };
+		E19608C62B93060C00DEF089 /* HealthJourney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19608C52B93060C00DEF089 /* HealthJourney.storyboard */; };
+		E19608C92B93062200DEF089 /* EventDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608C72B93062200DEF089 /* EventDetailed.swift */; };
+		E19608CA2B93062200DEF089 /* EventDetailed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19608C82B93062200DEF089 /* EventDetailed.storyboard */; };
+		E19608CD2B9308DA00DEF089 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608CC2B9308DA00DEF089 /* UserData.swift */; };
+		E19608D12B9313FC00DEF089 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19608D02B9313FC00DEF089 /* EventView.swift */; };
+		E19608D32B93192E00DEF089 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = E19608D22B93192E00DEF089 /* User.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +42,14 @@
 		E18D49B12B929F9B00D79025 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18D49B32B929FAD00D79025 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E18D49B42B92A19100D79025 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		E18D49B72B92A70700D79025 /* HealthJourney.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = HealthJourney.storyboard; path = "../../../../../../Library/Mobile Documents/.Trash/SureTravel-iOS/View/HealthJourney.storyboard"; sourceTree = "<group>"; };
 		E18D49B92B92A71B00D79025 /* HealthJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthJourney.swift; sourceTree = "<group>"; };
+		E19608C22B93022200DEF089 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		E19608C52B93060C00DEF089 /* HealthJourney.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthJourney.storyboard; sourceTree = "<group>"; };
+		E19608C72B93062200DEF089 /* EventDetailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailed.swift; sourceTree = "<group>"; };
+		E19608C82B93062200DEF089 /* EventDetailed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventDetailed.storyboard; sourceTree = "<group>"; };
+		E19608CC2B9308DA00DEF089 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E19608D02B9313FC00DEF089 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		E19608D22B93192E00DEF089 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,16 +83,15 @@
 		E18D49882B92277700D79025 /* SureTravel-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E18D49892B92277700D79025 /* AppDelegate.swift */,
+				E19608CE2B93123800DEF089 /* Supporting Files */,
 				E18D49A22B9236B400D79025 /* View */,
+				E19608CB2B9308B800DEF089 /* Logic */,
+				E18D49892B92277700D79025 /* AppDelegate.swift */,
 				E18D498B2B92277700D79025 /* SceneDelegate.swift */,
 				E18D498D2B92277700D79025 /* ViewController.swift */,
 				E18D49B32B929FAD00D79025 /* Main.storyboard */,
-				E18D49922B92277A00D79025 /* Assets.xcassets */,
 				E18D49B12B929F9B00D79025 /* LaunchScreen.storyboard */,
-				E18D49AA2B929F0B00D79025 /* Localizable.xcstrings */,
 				E18D49972B92277A00D79025 /* Info.plist */,
-				E18D49A72B92537A00D79025 /* Resources */,
 			);
 			path = "SureTravel-iOS";
 			sourceTree = "<group>";
@@ -88,9 +99,11 @@
 		E18D49A22B9236B400D79025 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E18D49B62B92A6EB00D79025 /* HealthJourney */,
+				E19608CF2B93136D00DEF089 /* MainScene */,
+				E19608C42B93056200DEF089 /* NetworkingScene */,
+				E18D49B62B92A6EB00D79025 /* HealthJourneyScene */,
 				E18D49A32B9236C400D79025 /* BackgroundView.swift */,
-				E18D49B42B92A19100D79025 /* ProgressView.swift */,
+				E19608C22B93022200DEF089 /* ProgressBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,13 +116,50 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E18D49B62B92A6EB00D79025 /* HealthJourney */ = {
+		E18D49B62B92A6EB00D79025 /* HealthJourneyScene */ = {
 			isa = PBXGroup;
 			children = (
-				E18D49B72B92A70700D79025 /* HealthJourney.storyboard */,
+				E19608C52B93060C00DEF089 /* HealthJourney.storyboard */,
 				E18D49B92B92A71B00D79025 /* HealthJourney.swift */,
 			);
-			path = HealthJourney;
+			path = HealthJourneyScene;
+			sourceTree = "<group>";
+		};
+		E19608C42B93056200DEF089 /* NetworkingScene */ = {
+			isa = PBXGroup;
+			children = (
+				E19608C82B93062200DEF089 /* EventDetailed.storyboard */,
+				E19608C72B93062200DEF089 /* EventDetailed.swift */,
+			);
+			path = NetworkingScene;
+			sourceTree = "<group>";
+		};
+		E19608CB2B9308B800DEF089 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E19608CC2B9308DA00DEF089 /* UserData.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		E19608CE2B93123800DEF089 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E18D49A72B92537A00D79025 /* Resources */,
+				E18D49922B92277A00D79025 /* Assets.xcassets */,
+				E19608D22B93192E00DEF089 /* User.json */,
+				E18D49AA2B929F0B00D79025 /* Localizable.xcstrings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E19608CF2B93136D00DEF089 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				E18D49B42B92A19100D79025 /* ProgressView.swift */,
+				E19608D02B9313FC00DEF089 /* EventView.swift */,
+			);
+			path = MainScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E18D49B02B929F9B00D79025 /* LaunchScreen.storyboard in Resources */,
+				E19608CA2B93062200DEF089 /* EventDetailed.storyboard in Resources */,
 				E18D49932B92277A00D79025 /* Assets.xcassets in Resources */,
-				E18D49B82B92A70700D79025 /* HealthJourney.storyboard in Resources */,
 				E18D49AB2B929F0B00D79025 /* Localizable.xcstrings in Resources */,
 				E18D499E2B92332300D79025 /* README.md in Resources */,
+				E19608C62B93060C00DEF089 /* HealthJourney.storyboard in Resources */,
+				E19608D32B93192E00DEF089 /* User.json in Resources */,
 				E18D49B22B929FAD00D79025 /* Main.storyboard in Resources */,
 				E18D49A92B92538D00D79025 /* network.jpg in Resources */,
 			);
@@ -189,12 +241,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19608C92B93062200DEF089 /* EventDetailed.swift in Sources */,
 				E18D49BA2B92A71B00D79025 /* HealthJourney.swift in Sources */,
 				E18D49A42B9236C400D79025 /* BackgroundView.swift in Sources */,
 				E18D498E2B92277700D79025 /* ViewController.swift in Sources */,
 				E18D49B52B92A19100D79025 /* ProgressView.swift in Sources */,
 				E18D498A2B92277700D79025 /* AppDelegate.swift in Sources */,
 				E18D498C2B92277700D79025 /* SceneDelegate.swift in Sources */,
+				E19608CD2B9308DA00DEF089 /* UserData.swift in Sources */,
+				E19608C32B93022200DEF089 /* ProgressBar.swift in Sources */,
+				E19608D12B9313FC00DEF089 /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
